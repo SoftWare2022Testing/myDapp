@@ -619,7 +619,7 @@
             const tokenId = 4748;
             
             try {
-                const receipt = await contract.methods.approve(approvedAddress, tokenId).send({from: account});
+                const receipt = await contract.methods.approve(recipientAddress, tokenId).send({from: account});
 
                 console.log('NFT Transfer successful:', receipt);
                 alert('NFT transferred successfully!');
